@@ -2,7 +2,6 @@ from collections.abc import Iterator
 from typing import Union
 from spotipy import Spotify
 import requests
-import pprint
 
 from utils import SpotifyClientManager
 from utils import Song

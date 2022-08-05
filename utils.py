@@ -6,8 +6,6 @@ import re
 
 SCOPE = 'user-library-read'
 
-
-
 @dataclass
 class Song:
     '''
@@ -22,11 +20,19 @@ class Song:
 
 @dataclass
 class SpotifyClientManager:
+    
+    settings = {}
+    with open('./spotify-creds.txt', 'r') as f:
+        settings_file = f.readlines()
+    for line in settings_file:
+        key, value = line.split('=')
+        settings.update({key: value.strip()})
+        
     scope: str = SCOPE
-    user_id: str = 'excelshad0wz'
-    client_id: str = 'acb20e9671e443d9ba8939197764e1c8'
-    client_secret: str = 'acab8e29efd0405789be22ad22373bae'
-    redirect_uri: str = 'http://localhost:8888/callback'
+    user_id: str = settings['SPOTIFY_USER_ID']
+    client_id: str = settings['SPOTIFY_CLIENT_ID']
+    client_secret: str = settings['SPOTIFY_CLIENT_SECRET']
+    redirect_uri: str = settings['SPOTIFY_REDIRECT_URI']
 
     @property
     def get_token(self):
