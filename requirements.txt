@@ -1,0 +1,7 @@
+mutagen==1.45.1
+spotipy==2.16.1
+requests==2.25.0
+PyInquirer==1.0.3
+ytmusicapi==0.12.2
+pydub==0.25.1
+yt_dlp==2022.3.8.2
