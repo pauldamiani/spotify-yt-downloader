@@ -1,31 +1,10 @@
-# spotifydl
+# spotify-yt-downloader
 
-Spotify downloader
-
-## Example
-
-![](imgs/example.gif)
+Spotify/YouTube Downloader and Converter
 
 ## Setup
 
-1.Create an app: https://developer.spotify.com/dashboard/applications
-
-![](imgs/setup.png)
-
-2.Copy the Client id and client secret
-
-![](imgs/copy.png)
-
-3.Set redirect uri to http://localhost:8888/callback
-
-![](imgs/redirecturi.png)
-
-### Setting Environment Variables (Windows)
-
-`set SPOTIFY_USER_ID <your_user_id>`  
-`set SPOTIFY_CLIENT_ID <your_client_id>`  
-`set SPOTIFY_CLIENT_SECRET <your_client_secret>`  
-`set SPOTIFY_REDIRECT_URI 'http://localhost:8888/callback'`
+TODO
 
 ## Dependencies
 
@@ -34,15 +13,6 @@ To install all modules run `pip install -r requirements.txt`
 ## Usage
 
 `python main.py`
-
-## Sample Output
-
-![](imgs/terminal.png)
-
-## Result
-
-![](imgs/folder.png)
-![](imgs/musicplayer.png)
 
 ## How it works
 
