@@ -1,0 +1,4 @@
+music/
+.cache*
+__pycache__
+spotify-creds.txt
